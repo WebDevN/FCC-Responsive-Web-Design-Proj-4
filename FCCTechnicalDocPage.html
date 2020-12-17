@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Technical Documentation Page</title>
+    <link rel="stylesheet" href="FCCTechnicalDocPage.css">
+</head>
+
+<body>
+    <div id="nav-wrapper">
+        <nav id="navbar">
+            <header>
+                <h1>Example Documentation</h1>
+            </header>
+            <ul>
+                <li>
+                    <div></div><a class="nav-link" href="#s1">Example Section 1</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s2">Example Section 2</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s3">Example Section 3</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s4">Example Section 4</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s5">Example Section 5</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s6">Example Section 6</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s7">Example Section 7</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s8">Example Section 8</a>
+                    <div></div>
+                </li>
+                <li>
+                    <div></div><a class="nav-link" href="#s9">Example Section 9</a>
+                    <div></div>
+                </li>
+            </ul>
+            <footer>
+                <div></div><a class="nav-link" href="#s10">Reference</a>
+                <div id="spacer"></div>
+            </footer>
+        </nav>
+    </div>
+
+    <main id="main-doc">
+        <section class="main-section" id="s1">
+            <h2>Example Section 1</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s2">
+            <h2>Example Section 2</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s3">
+            <h2>Example Section 3</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s4">
+            <h2>Example Section 4</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s5">
+            <h2>Example Section 5</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s6">
+            <h2>Example Section 6</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s7">
+            <h2>Example Section 7</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s8">
+            <h2>Example Section 8</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s9">
+            <h2>Example Section 9</h2>
+            <p>Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the
+                indentation level of the line, which in turn is used to determine the grouping of statements.</p>
+            <p>Tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up
+                to and including the replacement is a multiple of eight (this is intended to be the same rule as used by
+                Unix). The total number of spaces preceding the first non-blank character then determines the line’s
+                indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace
+                up to the first backslash determines the indentation.</p>
+            <p>Indentation is rejected as inconsistent if a source file mixes tabs and spaces in a way that makes the
+                meaning dependent on the worth of a tab in spaces; a TabError is raised in that case.</p>
+            <p><strong>Cross-platform compatibility note:</strong> because of the nature of text editors on non-UNIX
+                platforms, it is unwise to use a mixture of spaces and tabs for the indentation in a single source file.
+                It should also be noted that different platforms may explicitly limit the maximum indentation level.</p>
+            <p>Here is an example of a correctly (though confusingly) indented piece of Python code:</p>
+            <p>...</p>
+            <code>def perm(l):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                # Compute the list of all permutations of l<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            if len(l) <= 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          return [l]<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            r = []<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            for i in range(len(l)):<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                     s = l[:i] + l[i+1:]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     p = perm(s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     for x in p:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      r.append(l[i:i+1] + x)<br>&nbsp;&nbsp;&nbsp;&nbsp;
+            return r</code>
+        </section>
+        <section class="main-section" id="s10">
+            <h2>Reference</h2>
+            <p>Example text taken from <a
+                    href="https://docs.python.org/3/reference/lexical_analysis.html#indentation">2.1.8 Indentation</a>
+                on Python's online doucmentation.</p>
+        </section>
+
+
+
+    </main>
+</body>
+
+</html>
